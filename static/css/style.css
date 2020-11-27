@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: gray;
+    font-size: 35px
+}
+
+.nav-container{
+    height: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+}
+.nav-no-style {
+    display: flex;
+    list-style-type: none;
+}
+.right {
+    width: 30%;
+    align-items: center;
+    align-self: center;
+}
+
+.vcenter {
+    justify-content: space-evenly;
+}
+
+/*Nav Style Ends */
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.left-section {
+    text-align: justify;
+    width: 50%;
+}
+
+.spacer {
+    width: 10%;
+}
+
+.individual-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 30%;
+}
+
+.stack {
+    display: flex;
+}
+
+
+.our-focus-button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: #fc8b3f;
+    height: 35px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.our-focus {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.our-focus-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.our-3-objectives {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background-image: url("https://kunnaalsoni.github.io/awareness-jolly-invitation/images/t7_image1.jpg");
+}
+
+.alliance-members-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.terms-of-reference {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-color: #d4e8dd;
+}
+
+.long-button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: #fc8b3f;
+    height: 35px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+.secretariat-container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d4e8dd;
+}
+.ecosystem-partners-container {
+    height: 350px;
+}
