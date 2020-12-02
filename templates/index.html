@@ -3,13 +3,18 @@
 <head>
     <title>Youth For Sustainability</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 <body>
 <!--Nav !-->
 <nav class="nav-container">
     <ul class="nav-no-style vcenter left">
-        <li><img src="{% static 'images/vmitis_logo.png' %}" class="logo"></li>
+        <li><img src="{% static 'images/YFS.png' %}" class="logo"></li>
     </ul>
     <ul class="nav-no-style vcenter right">
         <li>Home</li>
@@ -21,7 +26,7 @@
 <!--Nav Ends !-->
 <!-- Hero !-->
 <section>
-    <img src="{% static 'images/cover.jpg' %}" class="image-center">
+    <img src="{% static 'images/cover.jpg' %}" class="cover-image">
 </section>
 <!-- Hero Ends !-->
 
@@ -41,7 +46,29 @@
         </div>
         <div class="spacer"></div>
         <div class="right section">
-            <img src="{% static 'images/banner2.jpg' %}" height="230" >
+            <img src="{% static 'images/banner2.jpg' %}" height="230">
+        </div>
+    </div>
+    <h2 class="center-text">Fact Check</h2>
+    <div class="swiper-container2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><p class="center-text">1. 51.9% - The percentage of people aged below 25 years in
+                India </p></div>
+            <div class="swiper-slide"><p class="center-text">2. 814 million – The projected urban population of India
+                for the year 2050. </p></div>
+            <div class="swiper-slide"><p class="center-text">3. 3.3 million metric tonnes – The amount of plastic waste
+                that is generated in India per year</p></div>
+            <div class="swiper-slide"><p class="center-text">4. Rs. 1,22,000 crores – The estimated amount of ‘lost GDP’
+                and lowering of living standards for <br> nearly half of India’s population by 2050 if climate crisis
+                continues unchecked </p></div>
+            <div class="swiper-slide"><p class="center-text">5. Rs. 92,000 crores – The value of food that is wasted in
+                India per year which is enough to feed all of Bihar </p></div>
+            <div class="swiper-slide"><p class="center-text">6. 1st – India is the world’s largest importer of soybean
+                oil and palm oil which are often linked with deforestation </p></div>
+            <div class="swiper-slide"><p class="center-text">7. 3rd – India is the third largest emitter of greenhouse
+                gases in the world after China and USA </p></div>
         </div>
     </div>
     <h2>Our Focus</h2>
@@ -72,28 +99,21 @@
         >
         <div class="stack">
             <div class="individual-item">
-                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100">
-                <h3>Vijay Mallya sells US stocks from France</h3>
+                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100" class="image-center">
+                <h3>Youth Empowerment</h3>
             </div>
             <div class="individual-item">
-                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100">
-                <h3>Vijay Mallya sells US stocks from France</h3>
+                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100" class="image-center">
+                <h3>Youth Partnerships</h3>
             </div>
             <div class="individual-item">
-                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100">
-                <h3>Vijay Mallya sells US stocks from France</h3>
+                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100" class="image-center">
+                <h3>Youth Guidance</h3>
             </div>
         </div>
     </div>
 </div>
 <!--end objective!-->
-<!-- Youth Reach !-->
-<div class="container">
-    <h2 class="center-text">Youth Reach</h2>
-    <img src="{% static 'images/vmitis_logo.png' %}" height="150" width="150" class="image-center">
-    <p class="center-text">Youth Leaders</p>
-</div>
-<!-- Youth Reach ENDS !-->
 <!--Terms of Reference !-->
 <div class="terms-of-reference">
     <div class="container">
@@ -102,7 +122,13 @@
             responsibilities, objectives and structure of the Alliance. To transcend language barriers, the document is
             available in 5 languages. Give it a read to understand the Alliance in its entirety!
         </p>
-        <button class="long-button image-center">This is a long beautiful button</button>
+        <div class="buttons-container">
+            <button class="our-focus-button image-center">English</button>
+            <button class="our-focus-button image-center">Hindi</button>
+            <button class="our-focus-button image-center">Bangla</button>
+            <button class="our-focus-button image-center">Gujrati</button>
+            <button class="our-focus-button image-center">Tamil</button>
+        </div>
     </div>
 </div>
 <!--Terms of Reference  End !-->
@@ -110,33 +136,57 @@
 <div class="alliance-members-container">
     <div class="container">
         <h2 class="center-text">ALLIANCE MEMBERS</h2>
-        <div class="stack">
+    </div>
+</div>
+<div class="swiper-container container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/ClimateCollectiveLogo.png' %}" height="100" width="100">
+                <img src="{% static 'images/ClimateCollectiveLogo.png' %}" height="200" width="200">
             </div>
+        </div>
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/GlobalShala.png' %}" height="100" width="100">
+                <img src="{% static 'images/GlobalShala.png' %}" height="200" width="200"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="individual-item">
+                <img src="{% static 'images/HumanCircleFoundation.png' %}" height="200" width="200">
             </div>
+        </div>
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/HumanCircleFoundation.png' %}" height="100" width="100">
+                <img src="{% static 'images/MashProject.png' %}" height="200" width="200"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="individual-item">
+                <img src="{% static 'images/OESI.png' %}" height="200" width="200">
             </div>
+        </div>
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/MashProject.png' %}" height="100" width="100">
+                <img src="{% static 'images/Yeastlogo.png' %}" height="200" width="200">
             </div>
+        </div>
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/OESI.png' %}" height="100" width="100">
+                <img src="{% static 'images/RSPO.png' %}" height="200" width="200">
             </div>
+        </div>
+        <div class="swiper-slide">
             <div class="individual-item">
-                <img src="{% static 'images/Yeastlogo.png' %}" height="100" width="100">
-            </div>
-            <div class="individual-item">
-                <img src="{% static 'images/RSPO.png' %}" height="100" width="100">
-            </div>
-            <div class="individual-item">
-                <img src="{% static 'images/Yeastlogo.png' %}" height="100" width="100">
+                <img src="{% static 'images/Yeastlogo.png' %}" height="200" width="200">
             </div>
         </div>
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 <!-- Alliance Members Ends !-->
 <!-- Secretariat !-->
@@ -150,7 +200,8 @@
                 <p class="center-text">India Head, RSPO</p>
             </div>
             <div class="individual-item">
-                <img src="{% static 'images/WioletaBurdzySeth.jpg' %}" height="100" width="100" class="image-center">
+                <img src="{% static 'images/WioletaBurdzySeth.jpg' %}" height="100" width="100"
+                     class="image-center">
                 <h3 class="center-text">Wioleta Burdzy Seth</h3>
                 <p class="center-text">Chief Operating Officer, Human Circle</p>
             </div>
@@ -174,15 +225,59 @@
         <h2 class="center-text">ECOSYSTEM PARTNERS</h2>
         <div class="stack">
             <div class="individual-item">
-                <img src="{% static 'images/YFS.png' %}" height="100" width="100">
+                <img src="{% static 'images/YFS.png' %}" height="300" width="300">
             </div>
             <div class="individual-item">
-                <img src="{% static 'images/vmitis_logo.png' %}" height="100" width="100">
-            </div>
+                <img src="{% static 'images/YIC.png' %}" height="300" width="300">
             </div>
         </div>
     </div>
 </div>
+</div>
 <!-- Ecosystem Partners Ends !-->
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+        var mySwiperNew = new Swiper('.swiper-container2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
 </body>
 </html>

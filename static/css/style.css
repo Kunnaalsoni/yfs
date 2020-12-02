@@ -14,21 +14,23 @@ h2 {
     font-size: 35px
 }
 
-.nav-container{
-    height: 100px;
+.nav-container {
+    height: 140px;
     display: flex;
     align-items: start;
     justify-content: space-evenly;
 }
 
 .logo {
-    height: 45px;
-    width: 45px;
+    height: 145px;
+    width: 145px;
 }
+
 .nav-no-style {
     display: flex;
     list-style-type: none;
 }
+
 .right {
     width: 30%;
     align-items: center;
@@ -40,6 +42,13 @@ h2 {
 }
 
 /*Nav Style Ends */
+
+.cover-image {
+    margin-left: auto;
+    display: flex;
+    height: 82%;
+    margin-right: auto;
+}
 
 .image-center {
     display: block;
@@ -88,8 +97,10 @@ h2 {
     font-weight: 600;
     background-color: #fc8b3f;
     height: 35px;
-    width: 200px;
+    width: 100px;
     border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .our-focus {
@@ -106,15 +117,16 @@ h2 {
 .our-3-objectives {
     display: flex;
     align-items: center;
-    height: 350px;
-    background-image: url("https://kunnaalsoni.github.io/awareness-jolly-invitation/images/t7_image1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    background-image: url("https://www.tecamgroup.com/wp-content/uploads/2019/05/picture_air-pollution_industry_winter_recortada.jpg");
 }
 
 .alliance-members-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
 }
 
 .terms-of-reference {
@@ -124,15 +136,6 @@ h2 {
     background-color: #d4e8dd;
 }
 
-.long-button {
-    border: none;
-    color: white;
-    font-weight: 600;
-    background-color: #fc8b3f;
-    height: 35px;
-    width: 400px;
-    border-radius: 25px;
-}
 
 .secretariat-container {
     height: 400px;
@@ -141,6 +144,24 @@ h2 {
     justify-content: space-evenly;
     background-color: #d4e8dd;
 }
+
 .ecosystem-partners-container {
     height: 350px;
+}
+
+.swiper-container {
+    height: 300px;
+}
+
+.swiper-container2 {
+    height: 90px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
 }
