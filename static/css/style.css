@@ -165,3 +165,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+.link {
+    color: white;
+}
