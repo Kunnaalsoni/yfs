@@ -99,8 +99,7 @@ h2 {
     height: 35px;
     width: 100px;
     border-radius: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .our-focus {
@@ -132,13 +131,13 @@ h2 {
 .terms-of-reference {
     display: flex;
     align-items: center;
-    height: 300px;
+    height: auto;
     background-color: #d4e8dd;
 }
 
 
 .secretariat-container {
-    height: 400px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -168,4 +167,96 @@ h2 {
 
 .link {
     color: white;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.responsive-img {
+    height: 250px;
+}
+
+.ecosystem-stack {
+    place-content: center;
+    display: flex;
+}
+
+.ecosystem-pictures {
+    height: 250px;
+}
+
+/*responsive design  */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
+    }
+
+    .cover-image {
+        height: 35%;
+    }
+
+    .section2 {
+        display: block;
+    }
+
+    .left-section {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .our-focus-container {
+        display: block;
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-3-objectives {
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: 400% 100%;
+        background-image: url(https://www.tecamgroup.com/wp-content/uploads/2019/05/picture_air-pollution_industry_winter_recortada.jpg);
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .responsive-img {
+        height: 180px;
+    }
+
+    .individual-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .our-focus-button {
+        margin: 12px;
+    }
+
+    .ecosystem-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms-of-reference {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: #d4e8dd;
+    }
 }
