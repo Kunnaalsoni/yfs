@@ -14,25 +14,124 @@ h2 {
     font-size: 35px
 }
 
-.nav-container {
-    height: 140px;
-    display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-}
-
 .logo {
-    height: 145px;
-    width: 145px;
+    height: 150px;
 }
 
-.nav-no-style {
-    display: flex;
-    list-style-type: none;
+.nav {
+    height: 150px;
+    margin-right: 22%;
+    margin-left: 22%;
+    width: 56%;
+    background-color: white;
+    position: absolute;
 }
 
-.right {
-    width: 30%;
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    margin-top: 55px;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        height: 125%;
+    }
+
+    .nav {
+        height: 125px;
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 45px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: white;
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid black;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+.right-section {
+    width: 40%;
     align-items: center;
     align-self: center;
 }
@@ -117,6 +216,7 @@ h2 {
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
+    place-content: center;
     width: 100%;
     background-size: 100%;
     background-image: url("https://www.tecamgroup.com/wp-content/uploads/2019/05/picture_air-pollution_industry_winter_recortada.jpg");
@@ -170,7 +270,9 @@ h2 {
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Padauk', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 .responsive-img {
@@ -192,7 +294,6 @@ p {
     .container {
         margin-left: 15px;
         margin-right: 15px;
-        width: 100%;
     }
 
     .cover-image {
@@ -207,7 +308,7 @@ p {
         width: 100%;
     }
 
-    .right {
+    .right-section {
         width: 100%;
     }
 
