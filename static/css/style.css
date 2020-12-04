@@ -151,6 +151,7 @@ h2 {
     margin-left: auto;
     display: flex;
     height: 82%;
+    width: 80%;
     margin-right: auto;
 }
 
@@ -414,6 +415,10 @@ p {
     height: 180px;
 }
 
+.connect {
+    width: 150px;
+}
+
 
 /*responsive design  */
 
@@ -424,7 +429,8 @@ p {
     }
 
     .cover-image {
-        height: 35%;
+        height: 300px;
+        width: 100%;
     }
 
     .section2 {
@@ -494,5 +500,21 @@ p {
 
     .swiper-container {
         height: 190px;
+    }
+
+    .swiper-container2 {
+        height: 150px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    #clouds {
+        padding: 0 0;
+        background: #9dd1fa;
+        background: -webkit-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
+        background: -linear-gradient(top, #9dd1fa, 0%, #c9dbe9 100%);
+        background: -moz-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
     }
 }

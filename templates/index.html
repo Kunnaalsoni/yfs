@@ -36,14 +36,17 @@
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#our_focus">Mission</a>
-        <a href="#">Connect</a>
+        <a href="#connect">Connect</a>
     </div>
 </div>
 <!--Nav Ends !-->
 <div id="clouds">
     <div class="cloud x1"></div>
     <section>
-        <img src="{% static 'images/cover.jpg' %}" class="cover-image col-mg-12 col-sm-12">
+        <video width="320" height="240" controls class="cover-image">
+            <source src="{% static 'images/cover.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
     <div class="cloud x2"></div>
     <div class="container center-text">
@@ -259,6 +262,19 @@
     </div>
 </div>
 <!-- Secretariat ENDS !-->
+<!-- Ecosystem Partners !-->
+<div class="ecosystem-partners-container" id="connect">
+    <div class="container">
+        <h2 class="center-text">Get involved</h2>
+        <div class="ecosystem-stack">
+            <a class="link" href="https://forms.gle/LbigSR16jwGrBbzT7">
+                <button class="our-focus-button connect">Connect with us</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Ecosystem Partners Ends !-->
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
