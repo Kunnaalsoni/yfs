@@ -17,7 +17,7 @@ h2 {
 }
 
 .logo {
-    height: 180px;
+    height: 190px;
 }
 
 .nav {
@@ -160,9 +160,9 @@ h2 {
 }
 
 .container {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .section2 {
@@ -282,6 +282,22 @@ h2 {
 p {
     font-family: "Microsoft Sans Serif";
     font-size: 16px;
+}
+
+.founder-image {
+    height: 180px;
+    width: 180px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.founder-container {
+    text-align: -webkit-center;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    place-content: center;
+
 }
 
 .responsive-img {
