@@ -17,14 +17,14 @@ h2 {
 }
 
 .logo {
-    height: 220px;
+    height: 240px;
 }
 
 .nav {
     height: 150px;
-    margin-right: 22%;
-    margin-left: 22%;
-    width: 56%;
+    margin-right: 15%;
+    margin-left: 15%;
+    width: 70%;
     position: relative;
     margin-bottom: 35px;
 }
@@ -379,7 +379,10 @@ p {
     }
 
     .alliance-logos {
-        height: 130px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
     }
 
     .swiper-container {
@@ -396,5 +399,8 @@ p {
 
     .ecosystem-pictures {
         height: 250px;
+    }
+    .mobile-space {
+        height: 25px;
     }
 }
