@@ -17,7 +17,7 @@ h2 {
 }
 
 .logo {
-    height: 240px;
+    height: 180px;
 }
 
 .nav {
@@ -46,9 +46,9 @@ h2 {
 
 .nav > .nav-links {
     display: inline;
-    margin-top: 95px;
+    margin-top: 85px;
     float: right;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .nav > .nav-links > a {
@@ -69,11 +69,11 @@ h2 {
 @media (max-width: 600px) {
 
     .logo {
-        height: 125%;
+        height: 115px;
     }
 
     .nav {
-        height: 125px;
+        height: 85px;
         width: 100%;
         position: relative;
         margin-left: 0;
@@ -267,6 +267,18 @@ h2 {
     color: white;
 }
 
+.link :visited {
+    color: white;
+}
+
+.link :hover {
+    color: white;
+}
+
+.link :active {
+    color: white;
+}
+
 p {
     font-family: "Microsoft Sans Serif";
     font-size: 16px;
@@ -300,6 +312,21 @@ p {
 
 .footer {
     text-align: center;
+}
+
+.linkedin-button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: #153aa5;
+    height: 25px;
+    width: 85px;
+    border-radius: 25px;
+}
+
+.center-linkedin {
+    display: flex;
+    place-content: center;
 }
 
 /*responsive design  */
@@ -400,6 +427,7 @@ p {
     .ecosystem-pictures {
         height: 250px;
     }
+
     .mobile-space {
         height: 25px;
     }
