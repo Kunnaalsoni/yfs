@@ -10,17 +10,14 @@ html {
 
 h2 {
     font-family: sans-serif;
-    display: table;
-    margin: 20px auto 20px auto;
+    display: block;
     padding: 5px;
-    background-color: #d5fffe;
-    color: #ffffff;
     color: gray;
     font-size: 35px
 }
 
 .logo {
-    height: 150px;
+    height: 220px;
 }
 
 .nav {
@@ -28,8 +25,8 @@ h2 {
     margin-right: 22%;
     margin-left: 22%;
     width: 56%;
-    background-color: none;
-    position: absolute;
+    position: relative;
+    margin-bottom: 35px;
 }
 
 .nav > .nav-header {
@@ -38,7 +35,7 @@ h2 {
 
 .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 22px;
+    font-size: 32px;
     color: black;
     padding: 10px 10px 10px 10px;
 }
@@ -49,7 +46,7 @@ h2 {
 
 .nav > .nav-links {
     display: inline;
-    margin-top: 55px;
+    margin-top: 95px;
     float: right;
     font-size: 18px;
 }
@@ -147,12 +144,9 @@ h2 {
 
 /*Nav Style Ends */
 
+
 .cover-image {
-    margin-left: auto;
-    display: flex;
-    height: 82%;
-    width: 80%;
-    margin-right: auto;
+    width: 100%;
 }
 
 .image-center {
@@ -249,6 +243,7 @@ h2 {
 
 .ecosystem-partners-container {
     height: auto;
+    width: 100%;
 }
 
 .swiper-container {
@@ -273,9 +268,8 @@ h2 {
 }
 
 p {
-    font-family: 'Padauk', sans-serif;
+    font-family: "Microsoft Sans Serif";
     font-size: 16px;
-    font-weight: bolder;
 }
 
 .responsive-img {
@@ -288,125 +282,13 @@ p {
 }
 
 .ecosystem-pictures {
-    height: 250px;
+    height: 330px;
 }
 
 .larger-text {
     font-size: 22px;
 }
 
-
-#clouds {
-    padding: 100px 0;
-    background: #9dd1fa;
-    background: -webkit-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
-    background: -linear-gradient(top, #9dd1fa, 0%, #c9dbe9 100%);
-    background: -moz-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
-}
-
-.cloud {
-    width: 200px;
-    height: 60px;
-    background: #fff;
-
-    border-radius: 200px;
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-
-    position: relative;
-}
-
-.cloud:before, .cloud:after {
-    content: '';
-    position: absolute;
-    background: #fff;
-    width: 100px;
-    height: 80px;
-    position: absolute;
-    top: -15px;
-    left: 10px;
-
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-}
-
-.cloud:after {
-    width: 120px;
-    height: 120px;
-    top: -55px;
-    left: auto;
-    right: 15px;
-}
-
-/*Time to animate*/
-.x1 {
-    -webkit-animation: moveclouds 15s linear infinite;
-    -moz-animation: moveclouds 15s linear infinite;
-    -o-animation: moveclouds 15s linear infinite;
-}
-
-/*variable speed, opacity, and position of clouds for realistic effect*/
-.x2 {
-    left: 200px;
-
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    transform: scale(0.6);
-    opacity: 0.6; /*opacity proportional to the size*/
-
-    /*Speed will also be proportional to the size and opacity*/
-    /*More the speed. Less the time in 's' = seconds*/
-    -webkit-animation: moveclouds 25s linear infinite;
-    -moz-animation: moveclouds 25s linear infinite;
-    -o-animation: moveclouds 25s linear infinite;
-}
-
-.x3 {
-    left: -250px;
-    top: -200px;
-
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.8; /*opacity proportional to the size*/
-
-    -webkit-animation: moveclouds 20s linear infinite;
-    -moz-animation: moveclouds 20s linear infinite;
-    -o-animation: moveclouds 20s linear infinite;
-}
-
-
-@-webkit-keyframes moveclouds {
-    0% {
-        margin-left: 1000px;
-    }
-    100% {
-        margin-left: -1000px;
-    }
-}
-
-@-moz-keyframes moveclouds {
-    0% {
-        margin-left: 1000px;
-    }
-    100% {
-        margin-left: -1000px;
-    }
-}
-
-@-o-keyframes moveclouds {
-    0% {
-        margin-left: 1000px;
-    }
-    100% {
-        margin-left: -1000px;
-    }
-}
 
 .alliance-logos {
     height: 180px;
@@ -417,7 +299,7 @@ p {
 }
 
 .footer {
-    text-align: right;
+    text-align: center;
 }
 
 /*responsive design  */
@@ -435,7 +317,6 @@ p {
     }
 
     .cover-image {
-        height: 300px;
         width: 100%;
     }
 
@@ -513,11 +394,7 @@ p {
         overflow: hidden;
     }
 
-    #clouds {
-        overflow: hidden;
-        padding: 0 0;
-        background: -webkit-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
-        background: -linear-gradient(top, #9dd1fa, 0%, #c9dbe9 100%);
-        background: -moz-linear-gradient(top, #c9dbe9 0%, #9dd1fa 100%);
+    .ecosystem-pictures {
+        height: 250px;
     }
 }

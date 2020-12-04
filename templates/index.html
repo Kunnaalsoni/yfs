@@ -40,78 +40,75 @@
     </div>
 </div>
 <!--Nav Ends !-->
-<div id="clouds">
-    <div class="cloud x1"></div>
-    <section>
-        <video width="320" height="240" controls class="cover-image">
-            <source src="{% static 'images/cover.mp4' %}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <div class="cloud x2"></div>
-    <div class="container center-text">
-        <h2 id="#about">Join the <br> Youth For Sustainability India Alliance</h2>
-        <div class="section2">
-            <div class="left-section">
-                <p>The Youth for Sustainability (YfS) India Alliance brings together like-minded youth-oriented
-                    organisations focused on SDG 12 – Responsible Consumption and Production and SDG 13 – Climate Action
-                    on
-                    a common national platform in the form of an Alliance to help India achieve its targets under SDG 12
-                    and
-                    13 with the youth as the accelerator.
-                    The Alliance aims to harness the tremendous power of the Indian youth to create a sustainable future
-                    through collective behaviour change and to drive policy changes in educational campuses, corporate
-                    groups, civil society organisations, the government and other stakeholders through
-                    consensus-building
-                    and urgent action.
-                </p>
-            </div>
-            <div class="spacer"></div>
-            <div class="right-section">
-                <img src="{% static 'images/banner2.jpg' %}" style="width: 100%">
+<section>
+    <img src="{% static 'images/cover.jpg' %}" class="cover-image col-mg-12 col-sm-12">
+</section>
+<div class="container center-text">
+    <h2 id="#about">Join the <br> Youth For Sustainability India Alliance</h2>
+    <div class="section2">
+        <div class="left-section">
+            <p style="text-align: left">The Youth for Sustainability (YfS) India Alliance brings together like-minded
+                youth-oriented
+                organisations focused on SDG 12 – Responsible Consumption and Production and SDG 13 – Climate Action
+                on
+                a common national platform in the form of an Alliance to help India achieve its targets under SDG 12
+                and
+                13 with the youth as the accelerator.
+                The Alliance aims to harness the tremendous power of the Indian youth to create a sustainable future
+                through collective behaviour change and to drive policy changes in educational campuses, corporate
+                groups, civil society organisations, the government and other stakeholders through
+                consensus-building
+                and urgent action.
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="right-section">
+            <video width="350" height="280" controls>
+                <source src="{% static 'images/cover.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <h2 class="center-text">Fact Check</h2>
+    <div class="swiper-container2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><p class="center-text larger-text">51.9% - The percentage of people aged below
+                25 years in
+                India </p></div>
+            <div class="swiper-slide"><p class="center-text larger-text">814 million – The projected urban
+                population of India
+                for the year 2050. </p></div>
+            <div class="swiper-slide"><p class="center-text larger-text">3.3 million metric tonnes – The amount of
+                plastic waste
+                that is generated in India per year</p></div>
+            <div class="swiper-slide"><p class="center-text larger-text">Rs. 92,000 crores – The value of food that
+                is wasted in
+                India per year which is enough to feed all of Bihar </p></div>
+            <div class="swiper-slide"><p class="center-text larger-text">1st – India is the world’s largest importer
+                of soybean
+                oil and palm oil which are often linked with deforestation </p></div>
+            <div class="swiper-slide"><p class="center-text larger-text">3rd – India is the third largest emitter of
+                greenhouse
+                gases in the world after China and USA </p></div>
+        </div>
+    </div>
+    <h2 id="our_focus">Our Focus</h2>
+    <p>The focus of the Alliance is to be the driving force in the ‘Decade of Action, 2020-30’.<br> To make it possible,
+        the
+        Alliance brings together like-minded youth-focused and multi-stakeholder organizations, and builds consensus
+        for
+        individual, civil society, corporate and government policy actions.</p>
+    <div class="our-focus-container">
+        <div class="our-focus">
+            <div>
+                <img src="{% static 'images/sdg12.png' %}" width="250" height="250">
             </div>
         </div>
-        <h2 class="center-text">Fact Check</h2>
-        <div class="swiper-container2">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><p class="center-text larger-text">51.9% - The percentage of people aged below
-                    25 years in
-                    India </p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">814 million – The projected urban
-                    population of India
-                    for the year 2050. </p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">3.3 million metric tonnes – The amount of
-                    plastic waste
-                    that is generated in India per year</p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">Rs. 92,000 crores – The value of food that
-                    is wasted in
-                    India per year which is enough to feed all of Bihar </p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">1st – India is the world’s largest importer
-                    of soybean
-                    oil and palm oil which are often linked with deforestation </p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">3rd – India is the third largest emitter of
-                    greenhouse
-                    gases in the world after China and USA </p></div>
-            </div>
-        </div>
-        <h2 id="our_focus">Our Focus</h2>
-        <p>The focus of the Alliance is to be the driving force in the ‘Decade of Action, 2020-30’. To make it possible,
-            the
-            Alliance brings together like-minded youth-focused and multi-stakeholder organizations, and builds consensus
-            for
-            individual, civil society, corporate and government policy actions.</p>
-        <div class="our-focus-container">
-            <div class="our-focus">
-                <div>
-                    <img src="{% static 'images/sdg12.png' %}" width="250" height="200">
-                </div>
-            </div>
-            <div class="our-focus">
-                <div>
-                    <img src="{% static 'images/sdg13.png' %}" width="250" height="200">
-                </div>
+        <div class="our-focus">
+            <div>
+                <img src="{% static 'images/sdg13.png' %}" width="250" height="250">
             </div>
         </div>
     </div>
@@ -144,7 +141,7 @@
         <h2 class="center-text">Terms of Reference</h2>
         <p class="center-text">The Terms of Reference document of the Alliance delineates the vision, goals, roles,
             responsibilities, objectives and structure of the Alliance. To transcend language barriers, the document is
-            available in 5 languages. Give it a read to understand the Alliance in its entirety!
+            available in 6 languages. Give it a read to understand the Alliance in its entirety!
         </p>
         <div class="buttons-container">
             <button class="our-focus-button image-center"><a class="link"
@@ -246,12 +243,12 @@
                 <img src="{% static 'images/WioletaBurdzySeth.jpg' %}" height="100" width="100"
                      class="image-center">
                 <h3 class="center-text">Wioleta Burdzy Seth</h3>
-                <p class="center-text">Chief Operating Officer, Human Circle</p>
+                <p class="center-text">Co-founder, Human Circle</p>
             </div>
             <div class="individual-item">
                 <img src="{% static 'images/PaulineLARAVOIRE.jpg' %}" height="100" width="100" class="image-center">
                 <h3 class="center-text">Pauline Laravoire</h3>
-                <p class="center-text">Founder, Y East</p>
+                <p class="center-text">Founder, Y-East</p>
             </div>
             <div class="individual-item">
                 <img src="{% static 'images/PunyaslokaPanda.jpg' %}" height="100" width="100" class="image-center">
@@ -267,10 +264,22 @@
     <div class="container">
         <h2 class="center-text">Get involved</h2>
         <div class="ecosystem-stack">
+            <div>
+                <img src="{% static 'images/connect-left.jpeg' %}" class="ecosystem-pictures">
+            </div>
+            <div>
+                <img src="{% static 'images/connect.svg' %}" class="ecosystem-pictures">
+            </div>
+        </div>
+        <div style="    display: flex;
+    flex-direction: column;
+    align-items: center;">
             <a class="link" href="https://forms.gle/LbigSR16jwGrBbzT7">
                 <button class="our-focus-button connect">Connect with us</button>
             </a>
         </div>
+
+
     </div>
 </div>
 <footer class="footer">This website for Youth for Sustainability India Alliance was designed by Enakshi Majumder (21
@@ -341,7 +350,7 @@
             el: '.swiper-pagination',
         },
         autoplay: {
-            delay: 2000
+            delay: 5000
         },
 
         // Navigation arrows
