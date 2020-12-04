@@ -82,11 +82,6 @@
                 <div class="swiper-slide"><p class="center-text larger-text">3.3 million metric tonnes – The amount of
                     plastic waste
                     that is generated in India per year</p></div>
-                <div class="swiper-slide"><p class="center-text larger-text">Rs. 1,22,000 crores – The estimated amount
-                    of ‘lost GDP’
-                    and lowering of living standards for nearly half of India’s population by 2050 if climate
-                    crisis
-                    continues unchecked </p></div>
                 <div class="swiper-slide"><p class="center-text larger-text">Rs. 92,000 crores – The value of food that
                     is wasted in
                     India per year which is enough to feed all of Bihar </p></div>
@@ -108,15 +103,11 @@
             <div class="our-focus">
                 <div>
                     <img src="{% static 'images/sdg12.png' %}" width="250" height="200">
-                    <h4>SDG 12</h4>
-                    <p>Responsible Consumption and Production</p>
                 </div>
             </div>
             <div class="our-focus">
                 <div>
                     <img src="{% static 'images/sdg13.png' %}" width="250" height="200">
-                    <h4>SDG 13</h4>
-                    <p>Climate Action in India for a sustainable future</p>
                 </div>
             </div>
         </div>
@@ -268,23 +259,6 @@
     </div>
 </div>
 <!-- Secretariat ENDS !-->
-<!-- Ecosystem Partners !-->
-<div class="ecosystem-partners-container">
-    <div class="container">
-        <h2 class="center-text">ECOSYSTEM PARTNERS</h2>
-        <div class="ecosystem-stack">
-            <div>
-                <img src="{% static 'images/logo2.png' %}" class="ecosystem-pictures">
-            </div>
-            <div>
-                <img src="{% static 'images/YIC.png' %}" class="ecosystem-pictures">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Ecosystem Partners Ends !-->
-
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -296,39 +270,55 @@
     }
 
     var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            }
+            ,
+            autoplay: {
+                delay: 1400
+            }
+            ,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+            ,
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }
+            ,
+        })
+    ;
+    var mySwiperNew = new Swiper('.swiper-container2', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 2,
+        spaceBetween: 10,
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
         },
         autoplay: {
-            delay: 1400
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
-    var mySwiperNew = new Swiper('.swiper-container2', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            delay: 1400
+            delay: 2000
         },
 
         // Navigation arrows
