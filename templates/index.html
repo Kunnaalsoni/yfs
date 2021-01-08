@@ -183,113 +183,13 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/ClimateCollectiveLogo.png' %}" class="alliance-logos">
+        {% for obj in image %}
+            <div class="swiper-slide">
+                <div class="individual-item">
+                    <img src="media/{{ obj.image }}" class="alliance-logos">
+                </div>
             </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/GlobalShala.png' %}" class="alliance-logos"></div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/HumanCircleFoundation.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/MashProject.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/OESI.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/RSPO.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/Artforward.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/ashoka.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/CEE.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/CRB.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/EarthlySienna.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/EcoClothing.jpg' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/EnviroCentre.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/Makersasulym.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/MBKS.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/Meltonfoundation.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/Swetchha.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/Yeastlogo.png' %}" class="alliance-logos">
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/BlueYard.jpeg' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/ClimateInteractive.png' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/infinityBox.jpeg' %}" class="alliance-logos">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="individual-item">
-                <img src="{% static 'images/YEPT.png' %}" class="alliance-logos">
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
