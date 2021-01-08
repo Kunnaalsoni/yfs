@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$lqvt=@nz3!hjqrv4@cbbj3gt&0476ri_0gw&!9$e9uaio3*ll'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yfsindia-env.eba-uredwdwt.us-east-2.elasticbeanstalk.com/']
 
 # Application definition
 
